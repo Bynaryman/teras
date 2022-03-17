@@ -1,0 +1,118 @@
+[*]
+[*] GTKWave Analyzer v3.3.111 (w)1999-2020 BSI
+[*] Thu Mar 17 17:41:43 2022
+[*]
+[dumpfile] "/home/zerotoasic/asic_tools/openlane/designs/teras/teras.vcd"
+[dumpfile_mtime] "Thu Mar 17 17:37:07 2022"
+[dumpfile_size] 215067
+[savefile] "/home/zerotoasic/asic_tools/openlane/designs/teras/teras.gtkw"
+[timestart] 788900000
+[size] 3768 1981
+[pos] -51 -51
+*-23.818674 920800000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 297
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 638
+@28
+teras.clk
+teras.rst_n
+teras.rtr_i
+teras.rtr_o
+@22
+[color] 2
+teras.data_i[31:0]
+[color] 2
+teras.sa_data_i[31:0]
+@28
+[color] 2
+teras.rts_i
+[color] 2
+teras.sa_eob
+[color] 2
+teras.sa_sob
+[color] 3
+teras.sa_valid_o
+[color] 3
+teras.rts_o
+@c00022
+[color] 3
+teras.sa_data_o[23:0]
+@28
+(0)teras.sa_data_o[23:0]
+(1)teras.sa_data_o[23:0]
+(2)teras.sa_data_o[23:0]
+(3)teras.sa_data_o[23:0]
+(4)teras.sa_data_o[23:0]
+(5)teras.sa_data_o[23:0]
+(6)teras.sa_data_o[23:0]
+(7)teras.sa_data_o[23:0]
+(8)teras.sa_data_o[23:0]
+(9)teras.sa_data_o[23:0]
+(10)teras.sa_data_o[23:0]
+(11)teras.sa_data_o[23:0]
+(12)teras.sa_data_o[23:0]
+(13)teras.sa_data_o[23:0]
+(14)teras.sa_data_o[23:0]
+(15)teras.sa_data_o[23:0]
+(16)teras.sa_data_o[23:0]
+(17)teras.sa_data_o[23:0]
+(18)teras.sa_data_o[23:0]
+(19)teras.sa_data_o[23:0]
+(20)teras.sa_data_o[23:0]
+(21)teras.sa_data_o[23:0]
+(22)teras.sa_data_o[23:0]
+(23)teras.sa_data_o[23:0]
+@1401200
+-group_end
+@c00022
+[color] 3
+teras.data_o[31:0]
+@28
+(0)teras.data_o[31:0]
+(1)teras.data_o[31:0]
+(2)teras.data_o[31:0]
+(3)teras.data_o[31:0]
+(4)teras.data_o[31:0]
+(5)teras.data_o[31:0]
+(6)teras.data_o[31:0]
+(7)teras.data_o[31:0]
+(8)teras.data_o[31:0]
+(9)teras.data_o[31:0]
+(10)teras.data_o[31:0]
+(11)teras.data_o[31:0]
+(12)teras.data_o[31:0]
+(13)teras.data_o[31:0]
+(14)teras.data_o[31:0]
+(15)teras.data_o[31:0]
+(16)teras.data_o[31:0]
+(17)teras.data_o[31:0]
+(18)teras.data_o[31:0]
+(19)teras.data_o[31:0]
+(20)teras.data_o[31:0]
+(21)teras.data_o[31:0]
+(22)teras.data_o[31:0]
+(23)teras.data_o[31:0]
+(24)teras.data_o[31:0]
+(25)teras.data_o[31:0]
+(26)teras.data_o[31:0]
+(27)teras.data_o[31:0]
+(28)teras.data_o[31:0]
+(29)teras.data_o[31:0]
+(30)teras.data_o[31:0]
+(31)teras.data_o[31:0]
+@1401200
+-group_end
+@22
+[color] 6
+teras.shift_register[12:0]
+@28
+[color] 6
+teras.sa_eob_q
+[color] 6
+teras.fifo_valid_o
+@22
+[color] 6
+teras.fifo_data_o[23:0]
+[pattern_trace] 1
+[pattern_trace] 0

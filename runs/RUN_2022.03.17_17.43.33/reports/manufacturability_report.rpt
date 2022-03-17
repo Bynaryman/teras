@@ -1,0 +1,19 @@
+Design Name: teras
+Run Directory: /openlane/designs/teras/runs/RUN_2022.03.17_17.43.33
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/reports/finishing/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/logs/finishing/31-teras.lvs.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/reports/finishing/antenna.rpt
+Number of pins violated: 7
+Number of nets violated: 7

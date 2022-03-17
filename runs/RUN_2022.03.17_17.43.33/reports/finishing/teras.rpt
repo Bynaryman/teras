@@ -1,0 +1,253 @@
+CVC: Log output to /openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/reports/finishing/teras.rpt
+CVC: Error output to /openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/reports/finishing/teras.rpt.error.gz
+CVC: Debug output to /openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/reports/finishing/teras.rpt.debug.gz
+CVC: Circuit Validation Check  Version 1.1.0
+CVC: Start: Thu Mar 17 17:50:15 2022
+
+Using the following parameters for CVC (Circuit Validation Check) from /openlane/scripts/cvc/sky130A/cvcrc.sky130A
+CVC_TOP = 'teras'
+CVC_NETLIST = '/openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/tmp/finishing/teras.cdl'
+CVC_MODE = 'teras'
+CVC_MODEL_FILE = '/openlane/scripts/cvc/sky130A/cvc.sky130A.models'
+CVC_POWER_FILE = '/openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/tmp/finishing/teras.power'
+CVC_FUSE_FILE = ''
+CVC_REPORT_FILE = '/openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/reports/finishing/teras.rpt'
+CVC_REPORT_TITLE = 'CVC $CVC_TOP'
+CVC_CIRCUIT_ERROR_LIMIT = '100'
+CVC_SEARCH_LIMIT = '100'
+CVC_LEAK_LIMIT = '0.0002'
+CVC_SOI = 'false'
+CVC_SCRC = 'false'
+CVC_VTH_GATES = 'false'
+CVC_MIN_VTH_GATES = 'false'
+CVC_IGNORE_VTH_FLOATING = 'false'
+CVC_IGNORE_NO_LEAK_FLOATING = 'false'
+CVC_LEAK_OVERVOLTAGE = 'true'
+CVC_LOGIC_DIODES = 'false'
+CVC_ANALOG_GATES = 'true'
+CVC_BACKUP_RESULTS = 'false'
+CVC_MOS_DIODE_ERROR_THRESHOLD = '0'
+CVC_SHORT_ERROR_THRESHOLD = '0'
+CVC_BIAS_ERROR_THRESHOLD = '0'
+CVC_FORWARD_ERROR_THRESHOLD = '0'
+CVC_FLOATING_ERROR_THRESHOLD = '0'
+CVC_GATE_ERROR_THRESHOLD = '0'
+CVC_LEAK?_ERROR_THRESHOLD = '0'
+CVC_EXPECTED_ERROR_THRESHOLD = '0'
+CVC_OVERVOLTAGE_ERROR_THRESHOLD = '0'
+CVC_PARALLEL_CIRCUIT_PORT_LIMIT = '0'
+CVC_CELL_ERROR_LIMIT_FILE = ''
+CVC_CELL_CHECKSUM_FILE = ''
+CVC_LARGE_CIRCUIT_SIZE = '10000000'
+CVC_NET_CHECK_FILE = ''
+CVC_MODEL_CHECK_FILE = ''
+End of parameters
+
+CVC: Reading device model settings...
+CVC: Reading power settings...
+CVC: Parsing netlist /openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/tmp/finishing/teras.cdl
+Cdl fixed data size 470707
+Usage CDL: Time: 0  Memory: 22736  I/O: 8  Swap: 0
+CVC: Counting and linking...
+CVC: Assigning IDs ...
+Usage DB: Time: 0  Memory: 25896  I/O: 8  Swap: 0
+CVC: 28402(28402) instances, 55289(55289) nets, 132766(132766) devices.
+CVC: Setting models ...
+Setting model tolerances...
+CVC: Shorting switches...
+	Shorted 28 short
+Setting instance power...
+
+ModelList> filename /openlane/scripts/cvc/sky130A/cvc.sky130A.models
+ Model> sky130_fd_pr__cap_mim_m3_1         0 C->capacitor  Parameters>
+ Model> sky130_fd_pr__cap_mim_m3_2         0 C->capacitor  Parameters>
+ Model> sky130_fd_pr__cap_var         0 C->capacitor  Parameters>
+ Model> condiode           0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__diode_pd2nw_05v5         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__diode_pw2nd_05v5         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__diode_pw2nd_11v0         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__model__parasitic__diode_ps2dn         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__model__parasitic__diode_ps2nw         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__model__parasitic__diode_pw2dn         0 D->diode      Parameters> Diodes> 1-2
+ Model> nfet_01v8      66369 M->nmos       Parameters> Vth=0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> pfet_01v8_hvt     66369 M->pmos       Parameters> Vth=-0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_bs_flash__special_sonosfet_star         0 M->nmos       Parameters> Vth=0.2 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__esd_nfet_g5v0d10v5         0 M->nmos       Parameters> Vth=0.2 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_01v8         0 M->nmos       Parameters> Vth=0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_01v8_lvt         0 M->nmos       Parameters> Vth=0.1 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_03v3_nvt         0 M->nmos       Parameters> Vth=0.2 Vds=3.3 Vgs=3.3 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_05v0_nvt         0 M->nmos       Parameters> Vth=0.2 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_g5v0d10v5         0 M->nmos       Parameters> Vth=0.2 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__pfet_01v8         0 M->pmos       Parameters> Vth=-0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__pfet_01v8_hvt         0 M->pmos       Parameters> Vth=-0.3 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__pfet_01v8_lvt         0 M->pmos       Parameters> Vth=-0.1 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__pfet_g5v0d10v5         0 M->pmos       Parameters> Vth=-0.2 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__special_nfet_latch         0 M->nmos       Parameters> Vth=0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__special_pfet_pass         0 M->pmos       Parameters> Vth=-0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__pnp_05v5         0 Q->bipolar    Parameters>
+ Model> short             28 R->switch_on  Parameters>
+ Model> sky130_fd_pr__res_generic_m1         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_m2         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_m3         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_m4         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_m5         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_nd         0 R->resistor   Parameters> R=l/w*120
+ Model> sky130_fd_pr__res_generic_nd__hv         0 R->resistor   Parameters> R=l/w*114
+ Model> sky130_fd_pr__res_generic_pd__hv         0 R->resistor   Parameters> R=l/w*191
+ Model> sky130_fd_pr__res_generic_po         0 R->resistor   Parameters> R=l/w*48
+ Model> sky130_fd_pr__res_high_po         0 R->resistor   Parameters> R=l/w*2000
+ Model> sky130_fd_pr__res_xhigh_po         0 R->resistor   Parameters> R=l/w*2000
+ModelList> end
+
+Power List> filename /openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/tmp/finishing/teras.power
+ VPWR power 1.8 -> 1.8 power
+ VGND power 0.0 -> 0.0 power
+ clk~>std_input input std_input -> min@0.0 max@1.8 input family(std_input;)
+ rst_n~>std_input input std_input -> min@0.0 max@1.8 input family(std_input;)
+ rtr_i~>std_input input std_input -> min@0.0 max@1.8 input family(std_input;)
+ rts_i~>std_input input std_input -> min@0.0 max@1.8 input family(std_input;)
+data_i[31:0]~>std_input input std_input
+ ->data_i[0] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[10] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[11] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[12] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[13] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[14] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[15] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[16] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[17] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[18] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[19] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[1] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[20] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[21] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[22] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[23] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[24] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[25] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[26] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[27] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[28] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[29] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[2] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[30] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[31] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[3] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[4] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[5] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[6] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[7] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[8] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->data_i[9] input std_input -> min@0.0 max@1.8 input family(std_input;)
+> expected values
+> macros
+ #define std_input min@VGND max@VPWR -> min@0.0 max@1.8
+Power List> end
+
+CVC: Linking devices...
+Usage EQUIV: Time: 0  Memory: 39476  I/O: 24  Swap: 0
+Power nets 45
+Hash dump:parameter->resistance map
+Contains 53 buckets, 54 elements
+Element count 0, 16
+Element count 1, 25
+Element count 2, 7
+Element count 3, 5
+Unused hash: 0.30, average depth 1.81
+Hash dump:text->circuit map
+Contains 337 buckets, 438 elements
+Element count 0, 76
+Element count 1, 127
+Element count 2, 95
+Element count 3, 35
+Element count 4, 4
+Unused hash: 0.23, average depth 2.02
+Hash dump:string->text map
+Contains 26267 buckets, 39258 elements
+Element count 0, 5852
+Element count 1, 8955
+Element count 2, 6503
+Element count 3, 3211
+Element count 4, 1230
+Element count 5, 378
+Element count 6, 118
+Element count 7, 17
+Element count 8, 0
+Element count 9, 3
+Unused hash: 0.22, average depth 2.50
+CVC: Shorting non conducting resistors...
+CVC: Calculating resistor voltages...
+Usage RES: Time: 0  Memory: 39476  I/O: 24  Swap: 0
+Power nets 45
+CVC: Calculating min/max voltages...
+Processing trivial nets found 20220 trivial nets
+CVC: Ignoring invalid calculations...
+CVC:   Removed 0 calculations
+Copying master nets
+CVC: Ignoring non-conducting devices...
+CVC:   Ignored 0 devices
+Usage MIN/MAX1: Time: 0  Memory: 41120  I/O: 24  Swap: 0
+Power nets 19417
+! Checking forward bias diode errors: 
+
+! Checking nmos source/drain vs bias errors: 
+
+! Checking nmos gate vs source errors: 
+
+! Checking pmos source/drain vs bias errors: 
+
+! Checking pmos gate vs source errors: 
+
+Usage ERROR: Time: 0  Memory: 41120  I/O: 24  Swap: 0
+CVC: Propagating Simulation voltages 1...
+Usage SIM1: Time: 0  Memory: 42176  I/O: 24  Swap: 0
+Power nets 19417
+CVC: Propagating Simulation voltages 3...
+Usage SIM2: Time: 0  Memory: 42440  I/O: 24  Swap: 0
+Power nets 19417
+Added 0 latch voltages
+CVC: Calculating min/max voltages...
+Processing trivial nets found 20220 trivial nets
+CVC: Ignoring invalid calculations...
+CVC:   Removed 0 calculations
+Copying master nets
+CVC: Ignoring non-conducting devices...
+CVC:   Ignored 0 devices
+Usage MIN/MAX2: Time: 0  Memory: 44024  I/O: 24  Swap: 0
+Power nets 38789
+! Checking overvoltage errors
+
+! Checking nmos possible leak errors: 
+
+! Checking pmos possible leak errors: 
+
+! Checking mos floating input errors:
+
+! Checking expected values:
+
+CVC: Error Counts
+CVC: Fuse Problems:         0
+CVC: Min Voltage Conflicts: 0
+CVC: Max Voltage Conflicts: 0
+CVC: Leaks:                 0
+CVC: LDD drain->source:     0
+CVC: HI-Z Inputs:           0
+CVC: Forward Bias Diodes:   0
+CVC: NMOS Source vs Bulk:   0
+CVC: NMOS Gate vs Source:   0
+CVC: NMOS Possible Leaks:   0
+CVC: PMOS Source vs Bulk:   0
+CVC: PMOS Gate vs Source:   0
+CVC: PMOS Possible Leaks:   0
+CVC: Overvoltage-VBG:       0
+CVC: Overvoltage-VBS:       0
+CVC: Overvoltage-VDS:       0
+CVC: Overvoltage-VGS:       0
+CVC: Model errors:          0
+CVC: Unexpected voltage :   0
+CVC: Total:                 0
+Usage Total: Time: 0  Memory: 44548  I/O: 64  Swap: 0
+Virtual net update/access 475713/13335848
+CVC: Log output to /openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/reports/finishing/teras.rpt
+CVC: End: Thu Mar 17 17:50:16 2022
+

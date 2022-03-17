@@ -1,0 +1,1 @@
+lvs {/openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/results/finishing/teras.spice teras} {/openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/tmp/finishing/28-powered_netlist.v teras} /home/zerotoasic/asic_tools/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/teras/runs/RUN_2022.03.17_17.43.33/logs/finishing/31-teras.lef.log -json
