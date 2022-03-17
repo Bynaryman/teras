@@ -2,6 +2,9 @@
 Teras is a generator of gemm accelerators.
 documentation incoming...
 
+# what does teras looks like ?
+![floorplaning43](pictures/teras_4x3.png?raw=true "TERAS 4x3 posit_8_0_beta")
+
 
 ## folder hierarchy
 
