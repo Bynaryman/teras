@@ -1,12 +1,13 @@
-# teras
+# TERAS
 Teras is a generator of gemm accelerators.
+documentation incoming...
 
-# folder hierarchy
-test
-some cocotb test and/or verilog_tb
 
-src
-the translated modules in verilog
+## folder hierarchy
 
-orignal
-contains the vhdl before ghdl yosys
+```
+├── original (contains the vhdl before ghdl yosys)
+├── runs  (the different runs)
+├── src  (the translated modules in verilog)
+└── test (test benches with cocotb)
+```
