@@ -21,7 +21,7 @@ module teras_bridge_mpw5 (
     // IOs
     input  [`MPRJ_IO_PADS-1:0] io_in,
     output [`MPRJ_IO_PADS-1:0] io_out,
-    output [`MPRJ_IO_PADS-1:0] io_oeb,
+    output [`MPRJ_IO_PADS-1:0] io_oeb
 
 );
     wire clk;
