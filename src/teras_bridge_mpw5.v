@@ -45,11 +45,10 @@ module teras_bridge_mpw5 (
     wire [31:0] matrix_c_out;
 
     wire valid;
+    wire matrix_c_valid;
 
     // WB
     assign valid = wbs_cyc_i && wbs_stb_i; 
-    assign wbs_dat_o = rdata;
-    assign wdata = wbs_dat_i;
 
     // IO
     assign io_out[31:8] = matrix_c_out[23:0];

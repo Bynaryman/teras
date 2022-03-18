@@ -4,6 +4,25 @@
 // and WR_VALID. RD_DATA is read on RD_READY and RD_VALID
 //-----------------------------------------------------------------------------
 `timescale 1ns/1ns
+module fifo
+    #(
+      parameter C_WIDTH = 32,   // Data bus width
+      parameter C_DEPTH = 1024, // Depth of the FIFO
+      parameter C_DELAY = 2
+      )
+    (
+     input                CLK, // Clock
+     input                RST, // Sync reset, active high
+
+     input [C_WIDTH-1:0]  WR_DATA, // Write data input
+     input                WR_VALID, // Write enable, high active
+     output               WR_READY, // ~Full condition
+
+     output [C_WIDTH-1:0] RD_DATA, // Read data output
+     input                RD_READY, // Read enable, high active
+     output               RD_VALID // ~Empty condition
+     );
+
 	function integer clog2;
 		input [31:0] v;
 		reg [31:0] value;
@@ -35,24 +54,6 @@
 			end
 		end
 	endfunction
-module fifo
-    #(
-      parameter C_WIDTH = 32,   // Data bus width
-      parameter C_DEPTH = 1024, // Depth of the FIFO
-      parameter C_DELAY = 2
-      )
-    (
-     input                CLK, // Clock
-     input                RST, // Sync reset, active high
-
-     input [C_WIDTH-1:0]  WR_DATA, // Write data input
-     input                WR_VALID, // Write enable, high active
-     output               WR_READY, // ~Full condition
-
-     output [C_WIDTH-1:0] RD_DATA, // Read data output
-     input                RD_READY, // Read enable, high active
-     output               RD_VALID // ~Empty condition
-     );
 
     // Local parameters
     localparam C_POW2_DEPTH = 2**clog2(C_DEPTH);
