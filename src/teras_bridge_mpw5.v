@@ -42,7 +42,7 @@ module teras_bridge_mpw5 (
     // IO
     assign io_out[31:8] = matrix_c_out[23:0];
     assign io_out[32]   = matrix_c_valid;
-    assign io_oeb = {(`MPRJ_IO_PADS-1){rst}};
+    assign io_oeb[`MPRJ_IO_PADS-1:0] = {`MPRJ_IO_PADS{1'b0}};
 
     assign clk = wb_clk_i;
     assign rst = wb_rst_i;
